@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- Icon user -->
+    <ImageView
+        android:id="@+id/imgUser150"
+        android:layout_width="100dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutForm150"
+        android:layout_width="362dp"
+        android:layout_height="243dp"
+        android:layout_margin="24dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/bg_linear"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgUser150"
+        app:layout_constraintVertical_bias="0.154">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/tvTitle150"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="26dp"
+            android:text="LOGIN"
+            android:textColor="#5B5B5B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/edtDTEmail150"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_mail"
+            android:drawablePadding="12dp"
+            android:hint="example@example.com"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/edTxtPass_150"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_key"
+            android:drawablePadding="12dp"
+            android:hint="*****************"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+        <!-- Nút Login -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvForgot150"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="FORGOT PASSWORD?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutForm150" />
+
+    <TextView
+        android:id="@+id/tvRegister150"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="DON'T HAVE AN ACCOUNT?"
+        android:textColor="#E3E7E7"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOR150" />
+
+    <TextView
+        android:id="@+id/tvOR150"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="OR"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvForgot150" />
+
+    <Button
+        android:id="@+id/btnLogin150"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="444dp"
+        android:background="@drawable/custom_btn"
+        android:text="LOGIN"
+        app:backgroundTint="@null"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
