@@ -20,15 +20,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:background="@drawable/btn_back"
+            android:cursorVisible="true"
+            android:drawableTop="@drawable/ic_back"
+            android:drawablePadding="12dp"
+            app:backgroundTint="@null" />
+
         <ImageView
             android:id="@+id/imgUser150"
             android:layout_width="364dp"
             android:layout_height="124dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="TODO"
             app:srcCompat="@drawable/ic_user" />
+
     </LinearLayout>
 
     <!-- From Info Layout -->
+
     <LinearLayout
         android:id="@+id/layoutForm150"
         android:layout_width="364dp"
@@ -42,10 +55,10 @@
         android:padding="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.779">
+        app:layout_constraintVertical_bias="0.703">
 
         <!-- Tiêu đề -->
         <TextView
@@ -140,7 +153,7 @@
             android:id="@+id/tvre_Pass150"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
+            android:layout_marginBottom="8dp"
             android:drawableLeft="@drawable/ic_key"
             android:drawablePadding="12dp"
             android:text="RE-TYPE PASSWORD"
@@ -153,7 +166,7 @@
             android:id="@+id/re_typepass150"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="15dp"
             android:drawablePadding="12dp"
             android:hint="**********************"
             android:inputType="textPassword"
@@ -162,11 +175,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnLogin150"
+        android:id="@+id/btnCreate150"
         android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#007BFF"
-        android:text="LOGIN"
+        android:text="CREATE"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -174,12 +187,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922" />
+        app:layout_constraintVertical_bias="0.892" />
 
     <TextView
-        android:id="@+id/tvLogin150"
+        android:id="@+id/tvLLogin150"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:cursorVisible="true"
         android:text="ADREADY HAVE AN ACCOUNT?"
         android:textColor="#0CED0C"
         android:textSize="16sp"
@@ -187,7 +202,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin150"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCreate150"
+        app:layout_constraintVertical_bias="0.918" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
